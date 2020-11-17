@@ -1,7 +1,6 @@
 # Kata-EvenOrOdd
-==================
 
-## Requirements
+Requirements
 
 Given an array of numbers, determine whether the sum of all of the numbers is odd or even.
 
