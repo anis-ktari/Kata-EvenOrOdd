@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace EvenOrOddKata
 {
@@ -7,20 +6,19 @@ namespace EvenOrOddKata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
-    }
+            int[] empty_array = new int[0];
+            int[] input2 = new int[] { 2, 5, 34, 6 };
+            int[] input3 = new int[] { 0, -1, -5 };
 
-    public class EvenOrOdd
-    {        
-        public string CheckEvenOrOddOfNumbersSum(int[] input)
-        {
-            if (input.Length == 0) // array is empty
-                return "Even";
-            
-            if (input.Sum() % 2 == 0)
-                return "Even";
-            return "Odd";
+            EvenOrOdd evenOrOdd = new EvenOrOdd();
+
+            string result1 = evenOrOdd.oddOrEven(empty_array);
+            string result2 = evenOrOdd.oddOrEven(input2);
+            string result3 = evenOrOdd.oddOrEven(input3);
+
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
         }
     }
 }
